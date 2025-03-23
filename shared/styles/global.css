@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap");
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+	box-sizing: border-box;
+}
+/* 1️⃣ @font-face 선언 */
+@font-face {
+	font-family: "Inter Tight", sans-serif;
+	src: url("InterTight-Regular.woff2") format("woff2"), url("InterTight-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+:root {
+	/* Font Variables */
+	--font-size-small: 1.2rem;
+	--font-size-base: 1.4rem;
+	--font-size-large: 1.6rem;
+	--font-family-primary: "Inter Tight", sans-serif;
+
+	/* UI Variables (주석 해제 시 적용 가능) */
+	/* --nf-height: 54px;
+	--nf-container-pad: 6px; */
+}
+
+/* 3️⃣ Normalize.css (브라우저 스타일 초기화) */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* 4️⃣ 기본 스타일 적용 */
+body {
+	font-size: var(--font-size-base);
+	font-family: "Inter Tight", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	/* font-family: var(--font-family-primary); */
+	line-height: 200%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+.nav-filters__container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
+	min-height: var(--nf-height);
+	padding: var(--nf-container-pad);
+	background: var(--nf-bg-1);
+	border-radius: var(--rounded-normal);
+	z-index: 4;
+	transition: all 0.3s;
+}
+*/
